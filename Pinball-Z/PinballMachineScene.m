@@ -81,8 +81,29 @@
         self.rightFlipper = rightFlipper;
 
         Bumper* b = [Bumper bumper];
-        b.position = CGPointMake(width*0.5, height*0.7);
+        b.position = CGPointMake(width*0.5, height*0.6);
         [self addChild:b];
+        
+        //        Bumper* b2 = [Bumper bumper];
+        //        b2.position = CGPointMake(width*0.2, height*0.6);
+        //        [self addChild:b2];
+        
+        //        Bumper* b3 = [Bumper bumper];
+        //        b3.position = CGPointMake(width*0.8, height*0.6);
+        //        [self addChild:b3];
+        
+        //        Bumper* b4 = [Bumper bumper];
+        //        b4.position = CGPointMake(width*0.5, height*0.5);
+        //        [self addChild:b4];
+        
+        Bumper* b5 = [Bumper bumper];
+        b5.position = CGPointMake(width*0.8, height*0.8);
+        [self addChild:b5];
+        
+        Bumper* b6 = [Bumper bumper];
+        b6.position = CGPointMake(width*0.2, height*0.8);
+        [self addChild:b6];
+
 
         SKLabelNode* scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Helvetica"];
         scoreLabel.position = CGPointMake(10, height-90);
